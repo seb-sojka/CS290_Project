@@ -1,0 +1,13 @@
+<h1>{{name}}</h1>
+<h2>Ingredients</h2>
+<h2>By: {{author}}</h2>
+<ul>
+  {{#each ingr}}
+    <li>{{this.size}}: {{this.name}}
+  {{/each}}
+</ul>
+<ol>
+  {{#each steps}}
+    <li>{{this.des}}
+  {{/each}}
+</ol>
