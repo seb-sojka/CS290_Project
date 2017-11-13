@@ -12,6 +12,32 @@ app.get('/',function(req,res){
 	res.render('home');
 });
 
+app.get('/breakfast',function(req,res){
+	var rec = [];
+	rec.meal = "Breakfast";
+	var recipes = [];
+	recipes.push({'name':'Overnight Oats','link':'https://wholefully.com/8-classic-overnight-oats-recipes-you-should-try/'})
+	rec.recipes = recipes;
+	res.render('mealList', rec);
+});
+
+app.get('/dinner',function(req,res){
+	var rec = [];
+	rec.meal = "Dinner";
+	var recipes = [];
+	recipes.push({'name':'Salmon and Couscous','link':'https://www.jamieoliver.com/recipes/fish-recipes/salmon-and-couscous/'})
+	rec.recipes = recipes;
+	res.render('mealList', rec);
+});
+
+app.get('/drinks',function(req,res){
+	var rec = [];
+	rec.meal = "Drinks";
+	var recipes = [];
+	recipes.push({'name':'Rob Roy','link':'http://www.seriouseats.com/recipes/2010/02/rob-roy-scotch-whisky-vermouth-recipe.html'})
+	rec.recipes = recipes;
+	res.render('mealList', rec);
+});
 
 app.use(function(req,res){
   res.status(404);
