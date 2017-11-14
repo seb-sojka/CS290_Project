@@ -5,8 +5,8 @@ var handlebars = require('express-handlebars').create({defaultLayout:'main'});
 
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
-app.set('port', 3354);
-app.use(express.static('views/images'));
+app.set('port', 4217);
+app.use(express.static('views'));
 
 app.get('/',function(req,res){
 	res.render('home');
@@ -17,6 +17,8 @@ app.get('/breakfast',function(req,res){
 	rec.meal = "Breakfast";
 	var recipes = [];
 	recipes.push({'name':'Overnight Oats','link':'https://wholefully.com/8-classic-overnight-oats-recipes-you-should-try/'})
+	recipes.push({'name':'Baked Eggs','link':'https://altonbrown.com/baked-eggs/'})
+	recipes.push({'name':'Scrambled Eggs','link':'http://www.geniuskitchen.com/recipe/gordon-ramsays-scrambled-eggs-186294'})
 	rec.recipes = recipes;
 	res.render('mealList', rec);
 });
@@ -26,6 +28,8 @@ app.get('/dinner',function(req,res){
 	rec.meal = "Dinner";
 	var recipes = [];
 	recipes.push({'name':'Salmon and Couscous','link':'https://www.jamieoliver.com/recipes/fish-recipes/salmon-and-couscous/'})
+	recipes.push({'name':'Colombian Chicken Stew','link':'http://www.seriouseats.com/recipes/2012/05/colombian-chicken-stew-with-potatoes-tomato-onion-recipe.html'})
+	recipes.push({'name':'Lentil Salad','link':'http://www.foodnetwork.com/recipes/alton-brown/lentil-salad-recipe-1946945'})
 	rec.recipes = recipes;
 	res.render('mealList', rec);
 });
@@ -35,6 +39,8 @@ app.get('/drinks',function(req,res){
 	rec.meal = "Drinks";
 	var recipes = [];
 	recipes.push({'name':'Rob Roy','link':'http://www.seriouseats.com/recipes/2010/02/rob-roy-scotch-whisky-vermouth-recipe.html'})
+	recipes.push({'name':'Corpse Reviver, no.2','link':'https://drinkstraightup.com/2013/01/29/corpse-reviver-no-2/'})
+	recipes.push({'name':'Margarita','link':'https://altonbrown.com/margarita-recipe/'})
 	rec.recipes = recipes;
 	res.render('mealList', rec);
 });

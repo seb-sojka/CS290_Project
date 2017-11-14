@@ -1,38 +1,3 @@
-<head>
-	<style>
-		#menu ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-			background-color: indigo;
-		}
-
-		#menu li {
-			float: left;
-		}
-
-		#menu li a {
-			display: inline-block;
-			color: white;
-			text-align: center;
-			padding: 14px 16px;
-			text-decoration: none;
-		}
-
-		#menu li a:hover {
-			background-color: yellow;
-			color: black;
-		}
-			
-		.carousel-inner > .item > img,
-		.carousel-inner > .item > a > img {
-			 margin: auto;
-		}
-	</style>
-</head>
-
-
 <div class="container">
    <div id="recipesCar" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -46,16 +11,16 @@
     <div class="carousel-inner" role="listbox">
 	
       <div class="item active">
-        <a href="/drinks"><img src="oldfashioned.jpg" alt="A Drink">
-        <div class="carousel-caption">
+        <a href="/drinks"><img src="/images/oldfashioned.jpg" alt="A Drink">
+        <div id = "drink-caption" class="carousel-caption">
 			<h3>Have a Drink</h3>
 			<p>Greast way to relax after a long day</p>
         </div></a>
       </div>
 
       <div class="item">
-        <a href="/breakfast"><img src="breakfast.jpg" alt="Breakfast">
-        <div class="carousel-caption">
+        <a href="/breakfast"><img src="/images/breakfast.jpg" alt="Breakfast">
+        <div id = "breakfast-caption" class="carousel-caption">
 			<h3>Breakfast</h3>
 			<p>Most important meal of the day</p>
         </div>
@@ -63,8 +28,8 @@
    
 	
 		<div class="item">
-			<a href="/dinner"><img src="salmon.png" alt="Dinner">
-			<div class="carousel-caption">
+			<a href="/dinner"><img src="/images/salmon.png" alt="Dinner">
+			<div id = "dinner-caption" class="carousel-caption">
 				<h3>Dinner</h3>
 			</div>
 		</div>
@@ -83,10 +48,15 @@
 </div>
 
 
-
-<div style="height:150px;width:300px;border:1px solid #ccc;">
-Recipes avialable:<br />
+<h3>Recipes avialable:</h3>
+<div id = "recipeScroll">
 Salmon and Couscous<br />
 Rob Roy<br />
 Overnight Oats<br />
+Baked Eggs<br />
+Scrambled Eggs<br />
+Corpse Reviver, no.2<br />
+Margarita<br />
+Colombian Chicken Stew<br />
+Lentil Salad<br />
 </div>

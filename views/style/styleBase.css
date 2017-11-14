@@ -1,0 +1,53 @@
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: indigo;
+}
+
+#menu li {
+	float: left;
+}
+
+#menu li a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+#menu li a:hover {
+	background-color: yellow;
+	color: black;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+     margin: auto;
+}
+
+.carousel-caption p{
+	font-size: 20px;
+}
+
+#breakfast-caption p{
+	color: black;
+}
+
+.carousel-caption h3{
+	font-size: 40px;
+}
+
+#recipeScroll
+{
+	height:100px;
+	width:200px;
+	border:1px solid #ccc;
+}
+
+#recipeList
+{
+	list-style-type:none
+}
