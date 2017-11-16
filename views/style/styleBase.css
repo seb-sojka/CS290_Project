@@ -72,8 +72,14 @@ container{
 	left:0;
 }
 
-#recipeList
+#recipeScrollList
 {
 	position: absolute;
 	top: 525px;
+}
+
+#downloadLink
+{
+	position: absolute;
+	top: 700px;
 }

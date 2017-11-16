@@ -28,7 +28,7 @@
    
 	
 		<div class="item">
-			<a href="/dinner"><img src="/images/salmon.png" alt="Dinner">
+			<!--<a href="/dinner"><img src="/images/salmon.png" alt="Dinner">-->
 			<div id = "dinner-caption" class="carousel-caption">
 				<h3>Dinner</h3>
 			</div>
@@ -47,11 +47,15 @@
   </div>
 </div>
 
-<div id= "recipeList">
+<div id= "recipeScrollList">
 	<h3 id = "hScroll">Recipes avialable:</h3>
 	<div id = "recipeScroll">
 	{{#each recipes}}
 		<li>{{this.name}}</a>
 	  {{/each}}
 	</div>
+</div>
+
+<div id = "downloadLink">
+	<a href = "/downloads/RecipesList.doc" download = "recipeList">  <span>Recipe Download</span> </a>
 </div>
